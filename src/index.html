@@ -1,14 +1,27 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <title>Image Search</title>
+    <link rel="stylesheet" href="/src/sass/_common.scss" />
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="search-container">
+      <h1>Image Search</h1>
+      <form class="search-form">
+        <input type="text" id="searchQuery" placeholder="Search images..." />
+        <button type="submit">Search</button>
+      </form>
+    </div>
+
+    <div class="gallery">
+      <!-- Images will be displayed here -->
+    </div>
+
+    <button class="load-more" style="display: none">Load more</button>
+
+    <!-- Fix the script src path -->
+    <script type="module" src="/src/index.js"></script>
   </body>
 </html>
