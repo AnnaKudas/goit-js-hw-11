@@ -58,9 +58,9 @@ async function fetchImages(query, currentPage) {
 
     displayImages(data.hits);
 
-    if (currentPage === 1) {
-      displayMessage(`Hooray! We found ${data.totalHits} images.`);
-    }
+    // if (currentPage === 1) {
+    //   displayMessage(`Hooray! We found ${data.totalHits} images.`);
+    // }
 
     if (currentPage * perPage < data.totalHits) {
       loadMoreBtn.style.display = 'block';
