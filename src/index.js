@@ -66,7 +66,6 @@ async function fetchImages(query, currentPage) {
       loadMoreBtn.style.display = 'block';
     } else {
       loadMoreBtn.style.display = 'none';
-      displayMessage("We're sorry, but you've reached the end of search results.");
     }
 
     // Refresh SimpleLightbox after adding new images
