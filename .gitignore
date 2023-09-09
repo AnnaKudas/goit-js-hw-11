@@ -107,3 +107,11 @@ dist
 
 # TernJS port file
 .tern-port
+
+/.github/
+.htmlnanorc
+.parcelrc
+.posthtmlrc
+.sassrc
+.prettierrc
+.pacckage-lock.json
